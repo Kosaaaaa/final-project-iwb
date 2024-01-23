@@ -83,7 +83,7 @@
 
       <section id="removeVideoSection" class="my-4">
         <h2 class="text-center">Usuń Film</h2>
-        <form id="removeVideoForm" action="video.php" method="post">
+        <form id="removeVideoForm" action="." method="post">
           <div class="container">
             <div class="row">
               <div class="col">
@@ -107,12 +107,12 @@
             </div>
           </div>
           <?php
-          $conn = mysqli_connect('localhost', 'root', '', 'finalProject');
           if (isset($_POST["removeVideoId"])) {
             $removeVideoId = $_POST["removeVideoId"];
+            $conn = mysqli_connect('localhost', 'root', '', 'finalProject');
             $conn->query("DELETE FROM movies WHERE id=$removeVideoId");
+            mysqli_close($conn);
           }
-          mysqli_close($conn);
           ?>
         </form>
       </section>
