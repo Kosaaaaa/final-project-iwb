@@ -27,6 +27,8 @@ function validateForm() {
     videoId.classList.remove("is-invalid");
     errorMessage.style.display = "none";
   }
+
+  return result;
 }
 
 removeVideoForm.addEventListener("submit", function (event) {
