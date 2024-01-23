@@ -1,7 +1,15 @@
-.bg-primary {
-    background-color: #00a6ff !important;
+#navbarHeader {
+    color: #fff!important;
+    background-color: #212529!important;
 }
 
-.bg-secondary {
-    background-color: #004266 !important;
+#navbarMain {
+    color: #fff!important;
+    background-color: #212529!important;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
 }
